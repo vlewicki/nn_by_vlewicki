@@ -1,9 +1,9 @@
 from pathlib import Path
 from typing import Literal
 import numpy as np
-from mnist.layers import Layer, Network, Trainer, ActivationFunction, BatchNormalizationLayer, ActivationLayer
-from mnist.utils import report_onehot, metrics
-from mnist.perceptron import Perceptron
+from .layers import Layer, Network, Trainer, ActivationFunction, BatchNormalizationLayer, ActivationLayer
+from .utils import report_onehot, metrics
+from .perceptron import Perceptron
 
 
 def load_mnist(part: Literal['trn'] | Literal['tst']):
